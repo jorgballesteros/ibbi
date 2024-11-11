@@ -60,7 +60,7 @@ El curso está diseñado para ofrecer un enfoque práctico y aplicado a la ense�
 
 ### **Parte 1: Introducción a la Ciencia de Datos (18h lectivas, 12h de trabajo en casa)**
 
-#### **Módulo 1: Programación en Python para Ciencia de Datos**
+#### **Módulo 1: Introducción a la Programación en Python para Ciencia de Datos**
    - **Objetivo**: Introducir las herramientas esenciales para el desarrollo en Python, orientado a proyectos de ciencia de datos.
    - **Contenidos**:
      - Configuración de entorno: VSCode, Jupyter Notebooks.
