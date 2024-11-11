@@ -1,6 +1,6 @@
 # 🌍 Curso de Ciencia de Datos e IA Aplicada para la Concienciación del Uso de Recursos
 
-Este repositorio contiene todo el material y los recursos para el **Curso de Ciencia de Datos e IA Aplicada para la Concienciación del Uso de Recursos**, dirigido al profesorado de FP del **IES San Marcos** en el marco del proyecto **iBBi**. El objetivo es proporcionar herramientas para desarrollar soluciones basadas en inteligencia artificial y análisis de datos que promuevan la eficiencia en el uso de recursos energéticos y de agua.
+Este repositorio contiene todo el material y los recursos para el **Curso de Ciencia de Datos e IA Aplicada para la Concienciación del Uso de Recursos**, dirigido al profesorado de FP del **Gobierno de Canarias** en el marco del proyecto **iBBi**. El objetivo es proporcionar herramientas para desarrollar soluciones basadas en inteligencia artificial y análisis de datos que promuevan la eficiencia en el uso de recursos energéticos y de agua.
 
 ## 🎯 Objetivo General
 Capacitar al profesorado en el uso de técnicas de análisis de datos, inteligencia artificial y automatización IoT para fomentar la sostenibilidad en la gestión de recursos. 
