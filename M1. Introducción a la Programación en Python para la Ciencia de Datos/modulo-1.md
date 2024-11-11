@@ -1,5 +1,5 @@
 # **Módulo 1: Introducción a la Programación en Python para la Ciencia de Datos**
-## **Sesión 1 (Presencial): Configuración de entorno y primeros pasos en Python**
+## **Sesión 1 (Online): Configuración de entorno y primeros pasos en Python**
 
 **Duración:** 3 horas  
 **Objetivo:** Configurar el entorno de trabajo y realizar los primeros ejercicios básicos en Python para preparar el trabajo con ciencia de datos.
@@ -58,19 +58,19 @@
    - Resolución de dudas.
 
 ### **Materiales para la sesión:**
-- Ordenadores con VSCode instalado o acceso a Google Colab.
+- Ordenadores con VSCode instalado y/o acceso a Google Colab.
 - Conexión a internet.
 - Dataset de ejemplo (archivo CSV).
 - Guía de instalación y tutoriales visuales (en PDF o enlaces).
 - Ejercicios prácticos en notebooks.
 
 ### **Tarea para casa (para la sesión online):**
-- Realizar una serie de ejercicios adicionales con variables y funciones en Python.
-- Subir los resultados a un notebook en Colab.
+- Realizar ejercicios adicionales con variables y funciones en Python.
+- Resolvar un caso práctico empleando para ello funcionalidad de `numpy` y `pandas`
 
-## **Sesión 2: Caso Práctico de Carga de Datos de Energía y Agua**
+## **Sesión 2: Carga, Manipulación y Visualización de Datos**
 **Duración:** 3 horas  
-**Objetivo:** Aplicar lo aprendido en un caso práctico sobre el análisis de datos de consumo de energía y agua.
+**Objetivo:** Obtener conocimientos en la carga y manipulación de datos para posteriormente realizar un análisis visual de éstos.
 
 ### **Estructura de la sesión:**
 #### 1. **Introducción y Repaso (15 minutos):**
