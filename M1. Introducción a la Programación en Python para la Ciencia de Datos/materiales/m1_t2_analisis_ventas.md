@@ -73,3 +73,18 @@ Ventas que superaron los 1000 €:
 
 DataFrame con columna 'Ingreso Total':
          Día    Categoría  Unidades Vendidas  Precio Unidad (€)  Ingreso Total
+```
+#### Solución del Ejercicio
+
+```python
+import pandas as pd
+
+# 1. Crear el DataFrame con los datos proporcionados
+datos = {
+    "Día": ["Lunes", "Lunes", "Martes", "Martes", "Miércoles", "Jueves", 
+            "Viernes", "Viernes", "Sábado", "Domingo"],
+    "Categoría": ["Electrónica", "Ropa", "Alimentos", "Electrónica", 
+                  "Ropa", "Alimentos", "Electrónica", "Alimentos", "Ropa", "Electrónica"],
+    "Unidades Vendidas": [5, 10, 8, 3, 7, 15, 2, 20, 12, 1],
+    "Precio Unidad (€)": [200, 30, 5, 150, 25, 7, 220, 6, 40, 300]
+}
