@@ -34,3 +34,18 @@ Tu tarea es:
 
 ---
 
+### **Código de inicio**:
+
+```python
+import pandas as pd
+
+# 1. Crear el DataFrame con los datos proporcionados
+datos = {
+    "Nombre": ["Ana", "Benjamín", "Carla", "Daniel", "Elena"],
+    "Matemáticas": [85, 76, 90, 65, 80],
+    "Física": [78, 85, 95, 70, 88],
+    "Química": [92, 88, 85, 75, 82]
+}
+
+df = pd.DataFrame(datos)
+```
