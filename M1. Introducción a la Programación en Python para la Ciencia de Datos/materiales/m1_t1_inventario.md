@@ -73,3 +73,27 @@ El precio de 'leche' ha sido actualizado a 1.5 €.
 Elige una opción (1-4): 4
 ¡Gracias por usar el programa!
 ```
+
+#### **Código ejemplo**:
+
+```python
+# Diccionario de inventario inicial
+inventario = {
+    "Manzana": 1.2,
+    "Plátano": 0.9,
+    "Leche (1L)": 1.3,
+    "Pan": 1.5,
+    "Huevos (12 unidades)": 3.2,
+    "Café (250g)": 4.8,
+    "Arroz (1kg)": 2.1,
+    "Pasta (500g)": 1.7,
+    "Aceite de oliva (1L)": 6.5,
+    "Jabón de manos": 2.3,
+    "Papel higiénico (6 rollos)": 4.0,
+    "Detergente (1L)": 5.6,
+    "Agua embotellada (1.5L)": 0.7,
+    "Yogurt (pack de 4)": 2.4,
+    "Chocolate (100g)": 2.5
+}
+
+```
