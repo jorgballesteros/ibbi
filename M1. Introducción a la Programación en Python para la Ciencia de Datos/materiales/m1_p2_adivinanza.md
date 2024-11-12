@@ -10,11 +10,15 @@
 
 2. **Instrucciones**:
    - Importa el módulo `random` para generar un número aleatorio.
-   - Utiliza un bucle `while` para permitir que el usuario siga adivinando hasta que acierte.
    - Usa condicionales para verificar si el número ingresado es mayor, menor o igual al número a adivinar.
    - Cuenta el número de intentos realizados por el usuario.
+   - La cuenta de intentos y el número aleatorio deben generarse en una celda independiente a la de ejecución de la función.
 
-3. **Uso de números aleatorios**:
-   ```python
-   import random
-   ```
+3. **Código de inicio**:
+
+```python
+import random
+incognita = random.random() * 100
+# Redondear a número entero
+
+```
