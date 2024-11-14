@@ -1,9 +1,9 @@
-### Tarea 2: Análisis de Ventas Semanales con Pandas
+# Tarea 2: Análisis de Ventas Semanales con Pandas
 **Objetivo**: Practicar la creación y manipulación de DataFrames de Pandas, así como el uso de operaciones básicas, filtrado, agregación y análisis de datos.
 
 ---
 
-#### **Descripción del ejercicio**:
+## **Descripción del ejercicio**:
 Imagina que trabajas en el departamento de ventas de una tienda y tienes acceso a un conjunto de datos que contiene información sobre las ventas de la última semana. Los datos incluyen:
 
 - **Día de la semana**
@@ -39,7 +39,7 @@ Tu tarea es:
 
 ---
 
-#### **Instrucciones**:
+## **Instrucciones**:
 1. Importa el módulo `pandas`.
 2. Crea un DataFrame a partir de los datos proporcionados.
 3. Realiza los cálculos y filtrados utilizando las funciones de Pandas.
@@ -47,7 +47,7 @@ Tu tarea es:
 
 ---
 
-### **Posible salida del programa**:
+## **Posible salida del programa**:
 
 ```
 Venta total por categoría:
@@ -74,7 +74,7 @@ Ventas que superaron los 1000 €:
 DataFrame con columna 'Ingreso Total':
          Día    Categoría  Unidades Vendidas  Precio Unidad (€)  Ingreso Total
 ```
-#### Solución del Ejercicio
+## Solución del Ejercicio
 
 ```python
 import pandas as pd

@@ -1,11 +1,11 @@
-### **Tarea 3: Análisis de la Generación Fotovoltaica y Factores Meteorológicos**
+# Tarea 3: Análisis de la Generación Fotovoltaica y Factores Meteorológicos
 
 ---
 
-### **Contexto**:
+## **Contexto**:
 Tienes un conjunto de datos que incluye registros diarios de **temperatura**, **radiación solar**, **humedad**, y **producción de energía fotovoltaica** durante un mes. El objetivo del análisis es identificar cómo las condiciones meteorológicas afectan la **generación de energía solar**.
 
-### **Datos de Ejemplo**:
+## **Datos de Ejemplo**:
 El conjunto de datos incluye las siguientes columnas:
 
 - **Fecha**: La fecha de la observación.
@@ -16,7 +16,7 @@ El conjunto de datos incluye las siguientes columnas:
 
 ---
 
-### Generar un DataFrame Simulado con Datos
+## Generar un DataFrame Simulado con Datos
 
 ```python
 import pandas as pd
@@ -46,7 +46,7 @@ print(df.head())
 
 ---
 
-### Instrucciones
+## Instrucciones
 
 **Objetivos del ejercicio**:
 
@@ -65,7 +65,7 @@ print(df.head())
 - El **mapa de calor** debería mostrar una correlación positiva fuerte entre **Radiación Solar** y **Generación Fotovoltaica**.
 - Las **gráficas de dispersión** te ayudarán a identificar tendencias y relaciones no lineales, como el posible impacto negativo de **altas temperaturas** o **altos niveles de humedad** en la eficiencia de la generación solar.
 
-### Solución del Ejercicio
+## Solución del Ejercicio
 
 ```python
 # 1. Visualizar la evolución diaria de las variables

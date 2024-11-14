@@ -1,9 +1,9 @@
-### Tarea 1: Inventario de Productos
+# Tarea 1: Inventario de Productos
 **Objetivo**: Practicar el uso de diccionarios, bucles y la definición de funciones para manipular datos.
 
 ---
 
-#### **Descripción del ejercicio**:
+## **Descripción del ejercicio**:
 Escribe un programa que gestione un inventario de productos en una tienda utilizando un diccionario. El programa permitirá al usuario buscar el precio de un producto, añadir un nuevo producto al inventario y actualizar el precio de un producto existente.
 
 - Utiliza un diccionario donde las **claves** son los nombres de los productos y los **valores** son sus precios.
@@ -14,7 +14,7 @@ Escribe un programa que gestione un inventario de productos en una tienda utiliz
 
 ---
 
-#### **Instrucciones**:
+## **Instrucciones**:
 1. Crea un diccionario con al menos 5 productos y sus precios.
 2. Define las funciones `buscar_precio`, `añadir_producto` y `actualizar_precio`.
 3. Permite al usuario realizar las siguientes acciones mediante un menú:
@@ -25,7 +25,7 @@ Escribe un programa que gestione un inventario de productos en una tienda utiliz
 
 ---
 
-#### **Datos de ejemplo**:
+## **Datos de ejemplo**:
 
 ```python
 # Diccionario de inventario inicial
@@ -49,7 +49,7 @@ inventario = {
 
 ```
 
-### **Posible salida del programa**:
+## **Posible salida del programa**:
 ```
 Opciones:
 1. Buscar precio de un producto
@@ -74,7 +74,7 @@ Elige una opción (1-4): 4
 ¡Gracias por usar el programa!
 ```
 
-#### **Código ejemplo**:
+## Solución del Ejercicio
 
 ```python
 # Diccionario de inventario inicial
