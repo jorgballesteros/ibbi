@@ -69,5 +69,3 @@ print(df.head())
 ## **Recursos Adicionales (Video Tutoriales)**
 1. [Introducción a Google Colab (YouTube)](https://www.youtube.com/watch?v=inN8seMm7UI) - Un tutorial detallado para principiantes.
 2. [Curso rápido de Google Colab (YouTube)](https://www.youtube.com/watch?v=xl8zdCY-abw) - Aprende cómo sacar el máximo provecho a Colab.
-
-Con estos pasos y ejemplos, estarás listo para empezar a usar Google Colab en tus proyectos de ciencia de datos y aprendizaje automático.
