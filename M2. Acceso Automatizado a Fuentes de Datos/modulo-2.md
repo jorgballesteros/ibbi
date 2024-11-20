@@ -47,7 +47,7 @@
 
 --
 
-## **Sesión 2: Integración de APIs y Adquisición de Datos Automatizada**
+## **Sesión 2: Adquisición Automatizada y Flujos de Datos**
 
 **Duración:** 3 horas  
 **Objetivo:** Aprender a integrar los datos obtenidos mediante APIs en flujos de trabajo de análisis, incluyendo la automatización y el uso de Node-RED para la adquisición de datos en tiempo real.

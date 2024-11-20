@@ -81,3 +81,27 @@ Aquí hay una lista de plataformas de **datos abiertos** que no requieren regist
 - **Tipos de datos**: Información geoespacial, mapas de ciudades, carreteras, puntos de interés y datos geográficos de todo el mundo.
 
 **Enlace**: [openstreetmap.org](https://www.openstreetmap.org/)
+
+### 11. **Canarias Datos Abiertos**
+- **Descripción**: Punto de encuentro para la publicación de datos del sector público canario en formatos abiertos, gratuitos y reutilizables
+- **Tipos de datos**:
+
+**Enlace**: [datos.canarias.es](https://datos.canarias.es/portal/)
+
+### 12. **Cabildo de Tenerife**
+- **Descripción**: Portal de datos abiertos del Cabildo de Tenerife y del sector público insular.
+- **Tipos de datos**: Datos abiertos en formátos estándar ordenados por temas.
+
+**Enlace**: [datos.tenerife.es](https://datos.tenerife.es/es/)
+
+### 13. **Ayuntamiento de Las Palmas de Gran Canaria**
+- **Descripción**: Conjuntos de datos del Ayuntamiento de Las Palmas de Gran Canaria
+- **Tipos de datos**: Cada conjunto de datos puede contener uno o más recursos o distribuciones reutilizables usualmente en diversos formatos.
+
+**Enlace**: [datosabiertos.laspalmasgc.es](http://datosabiertos.laspalmasgc.es/data/)
+
+### 14. **GRAFCAN**
+- **Descripción**: Portal de Datos Abiertos del Sistema de Información Territorial de Canarias (SITCAN).
+- **Tipos de datos**: Datos de geográficos de Canarias. Ofrece un visor web de datos para consulta.
+
+**Enlace**: [opendata.sitcan.es](https://opendata.sitcan.es/)
