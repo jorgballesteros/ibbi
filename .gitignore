@@ -166,3 +166,6 @@ cython_debug/
 
 # Solution files
 *_sol.md
+
+# Config file
+config.json
