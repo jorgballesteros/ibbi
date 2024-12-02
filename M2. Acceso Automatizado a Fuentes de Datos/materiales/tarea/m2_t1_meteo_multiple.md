@@ -1,10 +1,10 @@
-#  Tarea para Casa: Análisis Comparativo de Datos Meteorológicos en Múltiples Ubicaciones
+# Tarea para Casa: Análisis Comparativo de Datos Meteorológicos en Múltiples Ubicaciones
 
 En este ejercicio, practicarás cómo acceder a datos meteorológicos para **múltiples ubicaciones** utilizando una **API con credenciales** y realizarás un análisis comparativo entre las ciudades seleccionadas. Además, visualizarás las **series temporales** y generarás **gráficos comparativos** para entender mejor cómo las condiciones meteorológicas varían entre ubicaciones.
 
 ---
 
-## Objetivos de la tarea:
+## Objetivos de la tarea
 
 1. **Acceder a la API** para obtener datos meteorológicos (temperatura, radiación solar y humedad) para **tres ubicaciones**.
 2. **Visualizar las series temporales** de las variables meteorológicas para cada ciudad.

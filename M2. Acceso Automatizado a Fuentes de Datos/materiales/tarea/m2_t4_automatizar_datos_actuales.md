@@ -1,8 +1,6 @@
-### **Tarea: Programar Consultas a OpenWeatherMap y OpenMeteo para Variables Meteorológicas Actuales**
+# Tarea 4. Programar Consultas a OpenWeatherMap y OpenMeteo para Valores Actuales
 
----
-
-### **Objetivo:**
+## **Objetivo:**
 Desarrollar **dos scripts independientes** para realizar consultas automáticas a las APIs de **OpenWeatherMap** y **OpenMeteo** cada 15 minutos, obteniendo las siguientes variables meteorológicas actuales para una ubicación específica:
 
 - **Temperatura**
@@ -16,7 +14,7 @@ Además, los datos deben almacenarse en archivos **CSV** separados para cada API
 
 ---
 
-### **Requisitos previos**
+## **Requisitos previos**
 
 1. **Obtén tu API Key de OpenWeatherMap**: [https://openweathermap.org/](https://openweathermap.org/).
 2. **Instala las librerías necesarias**:
@@ -27,7 +25,7 @@ pip install requests pandas
 
 ---
 
-### **Paso 1: Script para OpenWeatherMap**
+## **Paso 1: Script para OpenWeatherMap**
 
 Guarda este código en un archivo llamado, por ejemplo, `recopilacion_owm.py`:
 
@@ -69,7 +67,7 @@ if __name__ == "__main__":
 
 ---
 
-### **Paso 2: Script para OpenMeteo**
+## **Paso 2: Script para OpenMeteo**
 
 Guarda este código en un archivo llamado, por ejemplo, `recopilacion_om.py`:
 
@@ -108,11 +106,11 @@ if __name__ == "__main__":
 
 ---
 
-### **Paso 3: Automatización de la Ejecución**
+## **Paso 3: Automatización de la Ejecución**
 
 Para ejecutar los scripts cada 15 minutos, puedes usar una **tarea programada** en tu sistema operativo:
 
-#### En Linux / macOS:
+### En Linux / macOS:
 1. Abre el crontab para editar:
    ```bash
    crontab -e
@@ -124,7 +122,7 @@ Para ejecutar los scripts cada 15 minutos, puedes usar una **tarea programada** 
    */15 * * * * /usr/bin/python3 /ruta/a/tu/recopilacion_om.py
    ```
 
-#### En Windows:
+### En Windows:
 1. Abre el **Programador de tareas**.
 2. Crea dos tareas independientes:
    - Una para ejecutar `recopilacion_owm.py`.
@@ -133,7 +131,7 @@ Para ejecutar los scripts cada 15 minutos, puedes usar una **tarea programada** 
 
 ---
 
-### **Resultados Esperados**
+## **Resultados Esperados**
 
 - **Archivos CSV generados**:
   - `datos_owm.csv`: Contendrá las variables meteorológicas actuales proporcionadas por OpenWeatherMap.
@@ -143,7 +141,7 @@ Para ejecutar los scripts cada 15 minutos, puedes usar una **tarea programada** 
 
 ---
 
-### **Extensiones Opcionales**
+## **Extensiones Opcionales**
 
 1. **Análisis de datos históricos**: Puedes leer ambos CSVs y comparar las variables entre las dos APIs para identificar discrepancias.
 2. **Visualización en tiempo real**: Usa **Matplotlib** o **Dash** para graficar las variables en tiempo real.

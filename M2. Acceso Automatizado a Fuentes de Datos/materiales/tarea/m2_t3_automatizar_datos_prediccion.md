@@ -1,17 +1,15 @@
-### **Tarea 3: Programar un Script para Recopilar Datos de Predicción de Open-Meteo**
+# Tarea 3. Recopilar Datos de Predicción de Open-Meteo
 
----
-
-### **Objetivo**
+## **Objetivo**
 1. Crear un script en Python que obtenga datos de predicción del tiempo (forecast) para una localización específica desde la API de **Open-Meteo**.
 2. Guardar los datos en un archivo CSV.
 3. Programar el script para que se ejecute automáticamente todos los días a las **6:30 AM** utilizando `crontab`.
 
 ---
 
-### **Paso 1: Desarrollo del Script**
+## **Paso 1: Desarrollo del Script**
 
-#### **1. Crear el archivo Python**
+### **1. Crear el archivo Python**
 Guarda el siguiente código en un archivo llamado `recopilar_prediccion_om.py`.
 
 ```python
@@ -55,7 +53,7 @@ if __name__ == "__main__":
 
 ---
 
-### **Paso 2: Probar el Script**
+## **Paso 2: Probar el Script**
 1. Ejecuta el script manualmente para verificar que funciona correctamente:
    ```bash
    python3 recopilar_prediccion_om.py
@@ -71,15 +69,15 @@ time,temperature_2m_max,temperature_2m_min,precipitation_sum
 
 ---
 
-### **Paso 3: Programar la Ejecución Automática con `crontab`**
+## **Paso 3: Programar la Ejecución Automática con `crontab`**
 
-#### **1. Abrir el archivo crontab**
+### **1. Abrir el archivo crontab**
 En la terminal, abre el editor de `crontab`:
 ```bash
 crontab -e
 ```
 
-#### **2. Añadir la tarea**
+### **2. Añadir la tarea**
 Añade la siguiente línea para programar el script a las 6:30 AM diariamente:
 ```bash
 30 6 * * * /usr/bin/python3 /ruta/completa/recopilar_prediccion_om.py >> /ruta/completa/recopilar_prediccion_om.log 2>&1
@@ -90,12 +88,12 @@ Añade la siguiente línea para programar el script a las 6:30 AM diariamente:
 - **`/ruta/completa/recopilar_prediccion_om.py`**: Ruta completa al script Python.
 - **`>> /ruta/completa/recopilar_prediccion_om.log 2>&1`**: Guarda la salida (y errores) en un archivo de log para depuración.
 
-#### **3. Guardar y salir**
+### **3. Guardar y salir**
 Guarda y cierra el archivo. La tarea se programará automáticamente.
 
 ---
 
-### **Paso 4: Verificar la Tarea Programada**
+## **Paso 4: Verificar la Tarea Programada**
 1. Listar las tareas programadas:
    ```bash
    crontab -l
@@ -106,7 +104,7 @@ Guarda y cierra el archivo. La tarea se programará automáticamente.
 
 ---
 
-### **Notas Finales**
+## **Notas Finales**
 - Si necesitas ajustar la ubicación, cambia las coordenadas (`LAT, LON`) en el script.
 - Revisa el archivo de log regularmente para asegurarte de que no haya errores.
 - Puedes extender la funcionalidad para enviar notificaciones o realizar análisis adicionales sobre los datos.

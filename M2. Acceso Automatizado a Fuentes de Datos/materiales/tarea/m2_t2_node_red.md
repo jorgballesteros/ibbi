@@ -1,4 +1,6 @@
-## Introducción a Node-RED
+# Tarea para casa. Introdución a Node-RED
+
+## ¿Que es Node-RED?
 Node-RED es una herramienta de desarrollo basada en flujo, ideal para conectar dispositivos, servicios y API de forma visual. Creado por IBM, permite a los usuarios diseñar flujos que integran datos y automatizan procesos mediante una interfaz intuitiva. Esto lo hace perfecto para proyectos de Internet de las Cosas (IoT), automatización, y aplicaciones en tiempo real.
 
 Node-RED está construido sobre Node.js, por lo que es necesario tenerlo instalado antes de usar Node-RED. A continuación, te explico cómo instalar y configurar Node-RED en tu sistema.
