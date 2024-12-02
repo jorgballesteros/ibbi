@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Parámetros para la consulta a la API
-API_KEY = 'TU_API_KEY'  # Reemplaza con tu API Key
+API_KEY = 'TU_CLAVE_API'  # Reemplaza con tu API Key
 CIUDADES = ['Santa Cruz de Tenerife,ES', 'Las Palmas de Gran Canaria,ES', 'Madrid,ES']
 URL_BASE = "http://api.openweathermap.org/data/2.5/forecast"
 ```
