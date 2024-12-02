@@ -1,4 +1,4 @@
-# Automatización de consulta en Node-RED
+# Ejercicio 7. Automatización de consulta en Node-RED
 Vamos a trabajar con Node-RED para replicar el proceso de la consulta de datos históricos sobre Open-Meteo.
 
 ## Introducción a Node-RED
