@@ -103,5 +103,5 @@ Esto iniciará Node-RED en tu terminal y deberías ver un mensaje indicando que 
 ---
 
 ## **Recursos Adicionales (Video Tutoriales)**
-1. [Introducción a Node-RED (YouTube)](https://www.youtube.com/watch?v=4J1I4eE7Y6Y) - Tutorial básico para principiantes.
-2. [Automatización con Node-RED (YouTube)](https://www.youtube.com/watch?v=6a61YYwot8w) - Cómo crear flujos automatizados.
+1. [Introducción a Node-RED (YouTube)](https://www.youtube.com/watch?v=tiG6DmSvia4) - Tutorial básico para principiantes.
+2. [Tutoriales de Node-RED en Inglés (YouTube)](https://www.youtube.com/watch?v=3AR432bguOY&list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw) - Lista de tutorailes de Node-RED en inglés
