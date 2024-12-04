@@ -1,0 +1,302 @@
+[
+    {
+        "id": "cf724aa00ffcfdf0",
+        "type": "tab",
+        "label": "iBBi - OM",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "31843aa0183ff41f",
+        "type": "cronplus",
+        "z": "cf724aa00ffcfdf0",
+        "name": "Every day at 6am",
+        "outputField": "payload",
+        "timeZone": "",
+        "storeName": "",
+        "commandResponseMsgOutput": "output1",
+        "defaultLocation": "",
+        "defaultLocationType": "default",
+        "outputs": 1,
+        "options": [
+            {
+                "name": "Recopliación OM",
+                "topic": "topic1",
+                "payloadType": "default",
+                "payload": "",
+                "expressionType": "cron",
+                "expression": "0 6 * * *",
+                "location": "",
+                "offset": "0",
+                "solarType": "all",
+                "solarEvents": "sunrise,sunset"
+            }
+        ],
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "f66a89d938b0d5eb"
+            ]
+        ]
+    },
+    {
+        "id": "d1a99d0d287a613a",
+        "type": "comment",
+        "z": "cf724aa00ffcfdf0",
+        "name": "Open-Meteo",
+        "info": "",
+        "x": 150,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d9179090f9f3b7ad",
+        "type": "http request",
+        "z": "cf724aa00ffcfdf0",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.4161&longitude=-16.5446&start_date={{payload.startDate}}&end_date={{payload.endDate}}&hourly=temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "ebe3e92aee76dc61"
+            ]
+        ]
+    },
+    {
+        "id": "f66a89d938b0d5eb",
+        "type": "function",
+        "z": "cf724aa00ffcfdf0",
+        "name": "function",
+        "func": "const now = new Date();\nconst endDate = new Date(now.setDate(now.getDate()-1)); // Fecha final\nconst startDate = new Date(endDate);\nstartDate.setDate(endDate.getDate() - 7); // Últimos 7 días\n\nmsg.payload = {\n    nowDate: now.toISOString().split('T')[0],\n    startDate: startDate.toISOString().split('T')[0],\n    endDate: endDate.toISOString().split('T')[0]\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "78516cca086e22c0",
+                "d9179090f9f3b7ad"
+            ]
+        ]
+    },
+    {
+        "id": "78516cca086e22c0",
+        "type": "debug",
+        "z": "cf724aa00ffcfdf0",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4506e57f0f2334d5",
+        "type": "debug",
+        "z": "cf724aa00ffcfdf0",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ebe3e92aee76dc61",
+        "type": "json",
+        "z": "cf724aa00ffcfdf0",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 710,
+        "y": 180,
+        "wires": [
+            [
+                "4506e57f0f2334d5",
+                "524b68e41d69f725",
+                "f38f3def0bb019c0"
+            ]
+        ]
+    },
+    {
+        "id": "b01b776a632a88ee",
+        "type": "file",
+        "z": "cf724aa00ffcfdf0",
+        "name": "guardar json",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 930,
+        "y": 300,
+        "wires": [
+            [
+                "af297cbbfe6b2e88"
+            ]
+        ]
+    },
+    {
+        "id": "af297cbbfe6b2e88",
+        "type": "debug",
+        "z": "cf724aa00ffcfdf0",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "524b68e41d69f725",
+        "type": "function",
+        "z": "cf724aa00ffcfdf0",
+        "name": "function 1",
+        "func": "// Obtener la fecha actual en formato YYYY-MM-DD\nconst now = new Date();\nconst dateStr = now.toISOString().split(\"T\")[0]; // Formato: YYYY-MM-DD\n\n// Crear el nombre del archivo dinámico\nmsg.filename = `/Users/jballesteros/Projects/Personal/iBBi/ibbi/datos_om_${dateStr}.json`; // Ruta del archivo con la fecha\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 300,
+        "wires": [
+            [
+                "b01b776a632a88ee"
+            ]
+        ]
+    },
+    {
+        "id": "37f49ce738dfa852",
+        "type": "file",
+        "z": "cf724aa00ffcfdf0",
+        "name": "guardar csv",
+        "filename": "filename_csv",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1170,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd74a4f04775b0ec",
+        "type": "debug",
+        "z": "cf724aa00ffcfdf0",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "14a8adc3ab8b5004",
+        "type": "csv",
+        "z": "cf724aa00ffcfdf0",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "all",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "fecha,temperature,humidity,precipitation,wind_speed",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 910,
+        "y": 100,
+        "wires": [
+            [
+                "dd74a4f04775b0ec",
+                "e9b2b0d82f8d5a4e"
+            ]
+        ]
+    },
+    {
+        "id": "f38f3def0bb019c0",
+        "type": "function",
+        "z": "cf724aa00ffcfdf0",
+        "name": "function 2",
+        "func": "// Asegúrate de que el objeto tiene la clave 'hourly'\nif (!msg.payload.hourly) {\n    node.error(\"La clave 'hourly' no existe en el objeto JSON.\");\n    return null;\n}\n// Extraer el objeto con los datos\nconst data = msg.payload.hourly\n\n// Extraer los arrays de datos\nconst time = data.time;\nconst temperature = data.temperature_2m;\nconst humidity = data.relative_humidity_2m;\nconst wind_speed = data.wind_speed_10m;\nconst precipitation = data.precipitation;\n\n// Crear una lista de filas con los datos combinados\nconst rows = time.map((time, index) => ({\n    fecha: time,\n    temperature: temperature[index],\n    humidity: humidity[index],\n    wind_speed: wind_speed[index],\n    precipitation: precipitation[index]\n}));\n\n// Pasar la lista como el nuevo payload\nmsg.payload = rows;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 100,
+        "wires": [
+            [
+                "14a8adc3ab8b5004"
+            ]
+        ]
+    },
+    {
+        "id": "e9b2b0d82f8d5a4e",
+        "type": "function",
+        "z": "cf724aa00ffcfdf0",
+        "name": "function 3",
+        "func": "// Obtener la fecha actual en formato YYYY-MM-DD\nconst now = new Date();\nconst dateStr = now.toISOString().split(\"T\")[0]; // Formato: YYYY-MM-DD\n\n// Crear el nombre del archivo dinámico\nmsg.filename_csv = `/Users/jballesteros/Projects/Personal/iBBi/ibbi/datos_om_${dateStr}.csv`; // Ruta del archivo con la fecha\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 160,
+        "wires": [
+            [
+                "37f49ce738dfa852"
+            ]
+        ]
+    }
+]

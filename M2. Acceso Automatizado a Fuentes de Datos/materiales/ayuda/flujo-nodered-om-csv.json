@@ -1,0 +1,241 @@
+[
+    {
+        "id": "090b16a5ca9c9323",
+        "type": "tab",
+        "label": "iBBi - OM - CSV",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "42bfccf080e78507",
+        "type": "cronplus",
+        "z": "090b16a5ca9c9323",
+        "name": "Todos los días 6am",
+        "outputField": "payload",
+        "timeZone": "",
+        "storeName": "",
+        "commandResponseMsgOutput": "output1",
+        "defaultLocation": "",
+        "defaultLocationType": "default",
+        "outputs": 1,
+        "options": [
+            {
+                "name": "schedule1",
+                "topic": "topic1",
+                "payloadType": "default",
+                "payload": "",
+                "expressionType": "cron",
+                "expression": "0 6 * * *",
+                "location": "",
+                "offset": "0",
+                "solarType": "all",
+                "solarEvents": "sunrise,sunset"
+            }
+        ],
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "dfec312415bf7c7c"
+            ]
+        ]
+    },
+    {
+        "id": "dfec312415bf7c7c",
+        "type": "function",
+        "z": "090b16a5ca9c9323",
+        "name": "fijar fechas",
+        "func": "const now = new Date();\nconst endDate = new Date(now.setDate(now.getDate() - 1)); // Fecha final\nconst startDate = new Date(endDate);\nstartDate.setDate(endDate.getDate() - 15); // Últimos 15 días\n\nmsg.payload = {\n    startDate: startDate.toISOString().split('T')[0],\n    endDate: endDate.toISOString().split('T')[0]\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 700,
+        "wires": [
+            [
+                "90808841fabdfe61",
+                "dee60eda712bd53a",
+                "ba6aef17f3a5566f"
+            ]
+        ]
+    },
+    {
+        "id": "42067373a248820f",
+        "type": "http request",
+        "z": "090b16a5ca9c9323",
+        "name": "Consulta API",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://archive-api.open-meteo.com/v1/archive?latitude={{payload.latitude}}&longitude={{payload.longitude}}&start_date={{payload.startDate}}&end_date={{payload.endDate}}&hourly=temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 700,
+        "wires": [
+            [
+                "fd2a109004ff3cca"
+            ]
+        ]
+    },
+    {
+        "id": "90808841fabdfe61",
+        "type": "function",
+        "z": "090b16a5ca9c9323",
+        "name": "Icod",
+        "func": "msg.payload.latitude = 27.34\nmsg.payload.longitude = -16.54\nmsg.location = \"Icod\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 800,
+        "wires": [
+            [
+                "42067373a248820f"
+            ]
+        ]
+    },
+    {
+        "id": "bf696032169161e6",
+        "type": "function",
+        "z": "090b16a5ca9c9323",
+        "name": "Santa Cruz",
+        "func": "msg.payload.latitude = 27.83\nmsg.payload.longitude = -16.21\nmsg.location = \"SantaCruz\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 600,
+        "wires": [
+            [
+                "42067373a248820f"
+            ]
+        ]
+    },
+    {
+        "id": "dee60eda712bd53a",
+        "type": "delay",
+        "z": "090b16a5ca9c9323",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 600,
+        "wires": [
+            [
+                "bf696032169161e6"
+            ]
+        ]
+    },
+    {
+        "id": "ba6aef17f3a5566f",
+        "type": "debug",
+        "z": "090b16a5ca9c9323",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 260,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "fd2a109004ff3cca",
+        "type": "json",
+        "z": "090b16a5ca9c9323",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 870,
+        "y": 660,
+        "wires": [
+            [
+                "6dc57e6371395453",
+                "2b74c6e562e58e90"
+            ]
+        ]
+    },
+    {
+        "id": "6dc57e6371395453",
+        "type": "function",
+        "z": "090b16a5ca9c9323",
+        "name": "function 4",
+        "func": "// Obtener la fecha actual en formato YYYY-MM-DD\nconst now = new Date();\nconst dateStr = now.toISOString(); // Formato: YYYY-MM-DD\nconst location = msg.location\n// Crear el nombre del archivo dinámico\nmsg.filename = `/Users/jballesteros/Projects/Personal/iBBi/ibbi/datos_om:${location}_${dateStr}.json`; // Ruta del archivo con la fecha\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 660,
+        "wires": [
+            [
+                "44a303cc0bb521e4"
+            ]
+        ]
+    },
+    {
+        "id": "44a303cc0bb521e4",
+        "type": "file",
+        "z": "090b16a5ca9c9323",
+        "name": "guardar json",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1170,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b74c6e562e58e90",
+        "type": "debug",
+        "z": "090b16a5ca9c9323",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 760,
+        "wires": []
+    }
+]
