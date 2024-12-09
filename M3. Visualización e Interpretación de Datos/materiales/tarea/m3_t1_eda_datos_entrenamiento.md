@@ -139,7 +139,6 @@ plt.figure(figsize=(10, 8))
 ---
 
 ## **5. Entregables**
-
-- Un informe que incluya:
-  - Gráficos generados.
-  - Conclusiones basadas en el análisis.
+Un informe (en ipynb) que incluya:
+   - Gráficos generados.
+   - Conclusiones basadas en el análisis.
