@@ -28,7 +28,7 @@ Crear una aplicación sencilla en **Dash** que:
 ## 3. Desarrollo del Ejercicio
 
 ### Paso 1: Preparar el Dataset
-En caso de no disponer de un consjunto de datos, podemos cnostruir uno que nos permita aprender estos conceptos. Si así fuera generaremos un dataset simulado para el ejercicio.
+En caso de no disponer de un conjunto de datos, podemos construir uno que nos permita aprender estos conceptos. Si así fuera, generaremos un dataset simulado para el ejercicio con el siguiente código:
 
 ```python
 import pandas as pd

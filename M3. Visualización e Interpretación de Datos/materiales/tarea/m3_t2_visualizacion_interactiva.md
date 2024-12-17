@@ -1,4 +1,4 @@
-# Tarea 2. Visulización Interactiva de Datos de Consumos y Generación en Edificio
+# Tarea 2. Visualización Interactiva de Datos de Consumos y Generación en Edificio
 
 En este ejercicio, exploraremos un conjunto de datos con registros horarios del año 2023 que incluyen información clave sobre el consumo de recursos, generación de energía y factores climáticos. El objetivo principal es generar visualizaciones interactivas que permitan analizar patrones y comparativas entre diferentes meses y variables.
 

@@ -28,7 +28,7 @@ app.layout = html.Div([
     # Encabezado
     html.Div(
         html.H1("Visualización de Datos Meteorológicos", 
-                style={"color":"white","text-align": "center", "background-color": "#008080", "padding": "20px"}),
+                style={"color":"white","text-align": "center", "background-color": "#FF8080", "padding": "20px"}),
     ),
 
     # Controles en una fila
@@ -62,6 +62,7 @@ app.layout = html.Div([
 
     # Gráfico de líneas
     dcc.Graph(id="line-graph", style={"margin": "20px"}),
+    dcc.Graph(id="area-graph", style={"margin": "20px"}),
     # Footer
     html.Div(
         html.P([
@@ -75,6 +76,7 @@ app.layout = html.Div([
 # Callbacks para interactividad
 @app.callback(
     Output("line-graph", "figure"),
+    Output("area-graph", "figure"),
     Input("date-picker", "start_date"),
     Input("date-picker", "end_date"),
     Input("location-dropdown", "value")
@@ -95,7 +97,7 @@ def update_graph(start_date, end_date, location):
         labels={"value": "Valor", "fecha": "Fecha", "variable": "Variable"},
         title=f"Datos Meteorológicos para {location}"
     )
-    fig.update_traces(mode="lines+markers")
+    fig.update_traces(mode="lines")
     return fig
 
 # Ejecutar la aplicación
