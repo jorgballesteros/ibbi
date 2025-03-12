@@ -17,9 +17,8 @@ El contenido está dividido en dos partes:
   - `Modulo4/`: Detección de Anomalías en Series Temporales.
   - `Modulo5/`: Modelos Predictivos en Series Temporales.
   - `Modulo6/`: Introducción a Modelos de Lenguaje (LLM).
-  - `Modulo7/`: Personalización de Modelos de Lenguaje.
-  - `Modulo8/`: Automatización Basada en Eventos en IoT.
-  - `Modulo9/`: Monitorización y Visualización Interactiva.
+  - `Modulo7/`: Automatización Basada en Eventos en IoT.
+  - `Modulo8/`: Monitorización y Visualización Interactiva.
 
 ## 🛠️ Requisitos del Sistema
 Asegúrate de tener instalados los siguientes programas:
