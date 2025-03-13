@@ -19,7 +19,7 @@
      - Conceptos básicos de series temporales: estacionalidad, tendencia, ruido y su importancia en la analítica.
      - Importancia del preprocesamiento de datos para alimentar modelos de IA: limpieza, imputación, normalización y transformaciones.
      - Presentación de herramientas de IA de nivel usuario para explorar datos:
-       - Dataprep: [https://docs.dataprep.ai/user_guide]
+       - YData Profiling: [https://docs.profiling.ydata.ai/latest/]
        - PyGWalker: [https://github.com/Kanaries/pygwalker]
        - Metabase: [https://www.metabase.com/]
    - **Práctica en clase (45 min):**
