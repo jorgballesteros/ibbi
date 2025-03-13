@@ -119,19 +119,11 @@ El curso está diseñado para ofrecer un enfoque práctico y aplicado a la ense�
      - Arquitectura de los Modelos LLM.
      - Procesamiento y extracción de datos en lenguaje natural.
      - Consulta de datos en lenguaje natural.
+     - Técnicas de ajuste de modelos LLM: Fine-tuning vs Prompting.
      - Caso práctico: análisis de preguntas de usuarios sobre patrones de consumo.
    - **Duración**: 6h lectivas, 3h trabajo en casa.
 
-#### **Módulo 7: Personalización y Ajuste de Modelos de Lenguaje**
-   - **Objetivo**: Adaptar un modelo de lenguaje a una aplicación específica para entornos de producción.
-   - **Contenidos**:
-     - Técnicas de ajuste de modelos LLM: Fine-tuning vs Prompting.
-     - Aplicación de LLM en la generación de respuestas a consultas.
-     - Evaluación y ajuste de rendimiento del modelo.
-     - Caso práctico: personalización para consulta de datos energéticos.
-   - **Duración**: 6h lectivas, 3h trabajo en casa.
-
-#### **Módulo 8: Automatización Basada en Eventos en IoT**
+#### **Módulo 7: Automatización IoT Basada en Eventos**
    - **Objetivo**: Configurar y automatizar la respuesta de equipos en función de eventos de datos detectados.
    - **Contenidos**:
      - Conceptos de automatización en IoT y comunicación entre dispositivos.
@@ -140,7 +132,7 @@ El curso está diseñado para ofrecer un enfoque práctico y aplicado a la ense�
      - Caso práctico: automatización en red de consumo de agua.
    - **Duración**: 6h lectivas, 3h trabajo en casa.
 
-#### **Módulo 9: Monitorización y Visualización Interactiva de Datos IoT**
+#### **Módulo 8: Monitorización y Visualización Interactiva de Datos IoT**
    - **Objetivo**: Desarrollar herramientas interactivas para visualizar y monitorear datos IoT y modelos de IA.
    - **Contenidos**:
      - Desarrollo de dashboards interactivos: Streamlit y Dash.
