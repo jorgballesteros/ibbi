@@ -22,7 +22,7 @@ En este ejercicio, trabajarás con un dataset alternativo que representa el cons
    - Aplicar transformaciones (como normalización o escalado) y generar visualizaciones que ayuden a identificar patrones y tendencias.
 
 2. **Exploración y Preprocesamiento con una Herramienta Low-Code:**  
-   - Utilizar una herramienta low-code (por ejemplo, Dataprep o PyGWalker) para cargar el mismo dataset.
+   - Utilizar una herramienta low-code (por ejemplo, YData Profiling o PyGWalker) para cargar el mismo dataset.
    - Explorar la interfaz para realizar las transformaciones y visualizaciones necesarias.
    - Comparar la experiencia y el resultado obtenido con la herramienta low-code respecto al código manual.
 
