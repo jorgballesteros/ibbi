@@ -41,6 +41,7 @@
    - Resolución de dudas y consultas.
 
 ### **Tarea para casa:**
+
 - Realizar una conexión a una API de su elección (puede ser relacionada con energía, agua o meteorología).
 - Extraer un conjunto de datos, limpiarlo y cargarlo en un DataFrame para su análisis.
 - Documentar el proceso y subir el notebook a Google Colab.
@@ -54,7 +55,7 @@
 
 ---
 
-### **Estructura de la sesión:**
+### **Estructura de la sesión**
 
 1. **Repaso y Conceptos Avanzados (15 minutos):**
    - **Repaso de la sesión anterior**: extracción y autenticación en APIs.
@@ -62,9 +63,8 @@
      - Paginación en APIs (manejo de grandes volúmenes de datos).
      - Rate limits y cómo gestionarlos.
 
----
-
 2. **Automatización de la Extracción de Datos (30 minutos):**
+
    - Uso de bucles y scripts en Python para la descarga periódica de datos.
    - Programación de tareas automatizadas (introducción a `cron` en sistemas Unix o `Task Scheduler` en Windows).
    - **Ejercicio práctico**:
@@ -72,8 +72,6 @@
    - **Materiales**:
      - Ejemplos de scripts para automatización.
      - Tutorial para configurar tareas programadas.
-
----
 
 3. **Introducción a Node-RED para la Adquisición de Datos (1 hora)**
    - **Conceptos básicos de Node-RED**:
@@ -90,8 +88,6 @@
      - Guía de instalación de Node-RED y ejemplos de flujos exportables.
      - Tutorial en PDF sobre cómo obtener una API Key y configurarla en Node-RED.
 
----
-
 4. **Análisis y Visualización de Datos Obtenidos (45 minutos)**
    - Exploración y análisis básico de los datos extraídos:
      - Limpieza de datos con `pandas`.
@@ -103,25 +99,26 @@
      - Ejemplos de notebooks para análisis y visualización.
      - Datasets generados a partir de las consultas realizadas con Node-RED.
 
----
-
 5. **Cierre y Ejercicio Final (15 minutos):**
    - **Ejercicio de cierre**:
      - Utilizar Node-RED para extraer datos de un API de su elección, integrarlos en un flujo, y realizar un análisis básico en un notebook.
    - Resolución de dudas y consultas.
 
----
+### **Tarea para casa**
 
-### **Tarea para casa:**
 - Configurar un flujo en Node-RED que consulte un API cada 3 horas, almacene los datos en un archivo CSV y los visualice en un dashboard.
 - Importar el CSV a un notebook en Google Colab, analizar los datos y generar una visualización.
 - Documentar el proceso y subir el notebook a la plataforma para su revisión.
 
 ---
 
-### **Materiales para la Sesión 2**
-- Acceso a Node-RED (instalación local o en la nube).
-- Acceso a Google Colab y Jupyter Notebooks.
-- Guías y tutoriales en PDF para Node-RED y APIs.
-- Ejemplos de flujos y scripts para ejercicios prácticos.
-- Datasets en formato JSON y CSV generados en la sesión.
+### **Recursos y Herramientas**
+
+- Presentación M2 iBBi [PDF](https://drive.google.com/file/d/1Ki3tllV-zYjNaTefe0mlgwlHHEoiSv8X/view?usp=sharing)
+- Repositorio de materiales en [Github](https://github.com/jorgballesteros):  
+  - Ejemplos de flujos y scripts para ejercicios prácticos.
+  - Datasets en formato JSON y CSV generados en la sesión.
+  - Ejercicios prácticos en notebooks.
+  - Tutoriales y ayuda.
+- Acceso a [Node-RED](https://nodered.org/docs/) (instalación local o en la nube).
+- Acceso a [Google Colab](https://colab.research.google.com/) y [Jupyter Notebooks](https://jupyter.org/).

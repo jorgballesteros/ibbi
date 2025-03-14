@@ -1,8 +1,9 @@
 # **Módulo 4: Detección de Anomalías en Series Temporales con IA**
 
 **Duración total:** 6 horas lectivas (2 sesiones de 3 horas cada una) + 3 horas de tarea en casa.
- 
+
 ## **Objetivo General**
+
 - Capacitar a los participantes para identificar anomalías en el consumo de recursos (energéticos y/o de agua) combinando técnicas estadísticas y modelos de IA.
 - Destacar el potencial de la inteligencia artificial para automatizar y mejorar la detección en entornos reales, promoviendo el uso de herramientas low-code y soluciones accesibles para todos.
 
@@ -19,9 +20,9 @@
      - Conceptos básicos de series temporales: estacionalidad, tendencia, ruido y su importancia en la analítica.
      - Importancia del preprocesamiento de datos para alimentar modelos de IA: limpieza, imputación, normalización y transformaciones.
      - Presentación de herramientas de IA de nivel usuario para explorar datos:
-       - YData Profiling: [https://docs.profiling.ydata.ai/latest/]
-       - PyGWalker: [https://github.com/Kanaries/pygwalker]
-       - Metabase: [https://www.metabase.com/]
+       - [YData Profiling](https://docs.profiling.ydata.ai/latest/)
+       - [PyGWalker](https://github.com/Kanaries/pygwalker)
+       - [Metabase](https://www.metabase.com/)
    - **Práctica en clase (45 min):**
      - Carga y visualización de un dataset de consumo energético usando Python (pandas, matplotlib/Seaborn).
      - Demostración de técnicas de limpieza y transformación aplicadas en un entorno colaborativo.
@@ -77,11 +78,18 @@
 ---
 
 ### **Recursos y Herramientas Recomendadas**
+
+- **Materiales:**
+  - Presentación M4 iBBi [PDF](https://drive.google.com/file/d/1WaNfSmLGS5muRVlWIraAa_wmMXz6qJqj/view?usp=drive_link)
+  - Repositorio de materiales en [Github](https://github.com/jorgballesteros):
+    - Dataset de ejemplo (archivo CSV).
+    - Ejercicios prácticos en notebooks.
+    - Tutoriales y ayuda.
 - **Python y Librerías:**
   - *pandas*, *matplotlib* y *Seaborn* para manejo y visualización de datos.
   - *scikit-learn* para la implementación de modelos de IA (Isolation Forest, etc.).
   - *Keras/TensorFlow* para explorar autoencoders (opcional según el nivel).
 - **Plataformas de IA Low-Code/No-Code:**
-  - Orange Data Mining u otras herramientas similares para complementar la experiencia y facilitar la exploración de modelos.
+  - Ydata Profiling, PyGWalker y otras herramientas similares para complementar la experiencia y facilitar la exploración de modelos.
 - **Entornos de Desarrollo:**
-  - Jupyter Notebook o Google Colab para el desarrollo de código reproducible.
+  - [Google Colab](https://colab.research.google.com/) y [Jupyter Notebooks](https://jupyter.org/) para el desarrollo de código reproducible.

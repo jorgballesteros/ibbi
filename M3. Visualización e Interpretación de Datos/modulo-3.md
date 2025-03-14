@@ -6,9 +6,12 @@
 ---
 
 ## **Sesión 1: Visualización Avanzada y Comparativa de Técnicas**
+
 - **Duración:** 3 horas.  
-- **Objetivo:** Profundizar en las capacidades de visualización avanzadas y analizar las mejoras que ofrece Seaborn en comparación con Matplotlib.
+- **Objetivo:** Profundizar en las capacidades de visualización avanzadas y analizar las mejoras que ofrece Seaborn en comparación con [Matplotlib](https://matplotlib.org/).
+
 ### **Contenidos**
+  
   1. **Repaso práctico de Matplotlib:**
      - Creación de gráficos básicos: líneas, barras e histogramas.
      - Personalización de gráficos: títulos, etiquetas, colores y leyendas.
@@ -25,12 +28,15 @@
 ---
 
 ## **Sesión 2: Visualización Interactiva y Aplicaciones Dinámicas**
+
 - **Duración:** 3 horas.  
 - **Objetivo:** Introducir a los participantes en la creación de visualizaciones interactivas y aplicaciones dinámicas que permitan explorar datos en tiempo real.
+
 ### **Contenidos**
+
   1. **Introducción a gráficos interactivos:**
      - Conceptos básicos de interactividad en visualizaciones.
-     - Breve introducción a Plotly:
+     - Breve introducción a [Dash Plotly](https://dash.plotly.com/):
        - Creación de gráficos básicos interactivos: líneas, barras y áreas.
        - Exploración de datos a través de gráficos interactivos (zoom, tooltips).
   2. **Aplicaciones dinámicas:**
@@ -45,14 +51,18 @@
 ---
 
 ## **Tarea para casa:**
-- Crear un conjunto de visualizaciones utilizando Seaborn y Streamlit para analizar tendencias en datos de consumo.
+
+- Crear un conjunto de visualizaciones utilizando [Seaborn](https://seaborn.pydata.org/) y [Streamlit](https://streamlit.io/) para analizar tendencias en datos de consumo.
 - Desarrollar una pequeña aplicación interactiva con Streamlit que permita comparar datos de consumo entre diferentes edificios o períodos.
-- Subir los resultados a un repositorio en GitHub o compartir el enlace y capturas del interfaz de Streamlit.
+- Subir los resultados a un repositorio en GitHub o compartir el enlace y capturas del interfaz de [Streamlit](https://streamlit.io/).
 
 ---
 
-## **Materiales del Módulo**
-- Notebooks con ejemplos prácticos de Matplotlib, Seaborn y Streamlit.
-- Tutorial paso a paso para instalar y configurar Streamlit.
-- Datasets de ejemplo en formato CSV sobre consumo de agua y energía.
-- Código base para ejercicios de visualización y aplicaciones.
+## **Recursos y Herramientas**
+
+- Presentación M3 iBBi [PDF](https://drive.google.com/file/d/1HxPhrP2_XFzhPNfgHkMexaNrKz_5QGGE/view?usp=sharing)
+- Repositorio de materiales en [Github](https://github.com/jorgballesteros):  
+  - Notebooks con ejemplos prácticos de Matplotlib, Seaborn y Streamlit.
+  - Tutorial paso a paso para instalar y configurar Streamlit.
+  - Datasets de ejemplo en formato CSV sobre consumo de agua y energía.
+  - Código base para ejercicios de visualización y aplicaciones.
