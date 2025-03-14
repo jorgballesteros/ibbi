@@ -91,5 +91,6 @@
   - *Keras/TensorFlow* para explorar autoencoders (opcional según el nivel).
 - **Plataformas de IA Low-Code/No-Code:**
   - Ydata Profiling, PyGWalker y otras herramientas similares para complementar la experiencia y facilitar la exploración de modelos.
+  - Ydata Profiling, PyGWalker y otras herramientas similares para complementar la experiencia y facilitar la exploración de modelos.
 - **Entornos de Desarrollo:**
   - [Google Colab](https://colab.research.google.com/) y [Jupyter Notebooks](https://jupyter.org/) para el desarrollo de código reproducible.
