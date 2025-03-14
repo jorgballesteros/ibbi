@@ -2,14 +2,14 @@
 ## **Sesión 1 (Online): Configuración de entorno y primeros pasos en Python**
 
 **Duración:** 3 horas  
-**Objetivo:** Configurar el entorno de trabajo y realizar los primeros ejercicios básicos en Python para preparar el trabajo con ciencia de datos.
+**Objetivo:** Configurar el entorno de trabajo y realizar los primeros ejercicios básicos en [Python](https://www.python.org/) para preparar el trabajo con ciencia de datos.
 
 ---
 
 ### **Estructura de la sesión:**
 
 1. **Introducción (15 minutos):**
-   - Breve repaso del objetivo del módulo y cómo Python es utilizado en ciencia de datos.
+   - Breve repaso del objetivo del módulo y cómo [Python](https://www.python.org/) es utilizado en ciencia de datos.
    - Introducción a las herramientas que se utilizarán:
      - **VSCode**: Un entorno de desarrollo popular y ligero.
      - **Google Colab**: Para trabajo colaborativo en la nube, sin necesidad de instalación.
@@ -26,7 +26,7 @@
 
    **Materiales:**
    - Guía de instalación (formato PDF o link a tutorial).
-   - Video tutorial rápido en Google Colab.
+   - Video tutorial rápido en [Google Colab](https://colab.research.google.com/).
 
 3. **Introducción a Python (30 minutos):**
    - Conceptos básicos de Python:
@@ -38,7 +38,7 @@
      - Creación de funciones básicas.
 
    **Materiales:**
-   - Ejemplos de código en un notebook (tanto para local como Colab).
+   - Ejemplos de código en un notebook (tanto para local como [Google Colab](https://colab.research.google.com/)).
    - Enunciados de ejercicios para resolver durante la sesión.
 
 4. **Introducción a Pandas y Numpy (30 minutos):**
@@ -56,13 +56,6 @@
    - Repaso rápido de los conceptos vistos.
    - Ejercicio de cierre: cada profesor carga un dataset y realiza una operación sencilla con pandas (filtrar datos, calcular promedios, etc.).
    - Resolución de dudas.
-
-### **Materiales para la sesión:**
-- Ordenadores con VSCode instalado y/o acceso a Google Colab.
-- Conexión a internet.
-- Dataset de ejemplo (archivo CSV).
-- Guía de instalación y tutoriales visuales (en PDF o enlaces).
-- Ejercicios prácticos en notebooks.
 
 ### **Tarea para casa (para la sesión online):**
 - Realizar ejercicios adicionales con variables y funciones en Python.
@@ -114,12 +107,17 @@
    - **Resolución de dudas:**
      - Espacio para preguntas y discusión sobre los resultados obtenidos.
 
-### **Materiales para la sesión:**
-- Acceso a un entorno de desarrollo (Google Colab o Jupyter Notebook).
-- Conexión a internet.
-- Datasets de ejemplo (archivos CSV para consumo de energía y agua).
-- Ejercicios prácticos en notebooks.
-
 ### **Tarea para casa (para la sesión online):**
 - Realizar un análisis más detallado de los datos, explorando correlaciones entre el consumo de energía y agua, y crear al menos una visualización adicional.
 - Subir los resultados a un notebook en Colab.
+
+## **Recursos y Herramientas:**
+- Presentación M1 iBBi [PDF](https://drive.google.com/file/d/1mXbMnRADRQy-CXlz50YOzu2EhZfueUHQ/view?usp=drive_link)
+- Repositorio de materiales en [Github](https://github.com/jorgballesteros):  
+  - Dataset de ejemplo (archivo CSV).
+  - Ejercicios prácticos en notebooks.
+  - Tutoriales y ayuda. 
+- Ordenadores con [VSCode](https://code.visualstudio.com/) instalado y/o acceso a [Google Colab](https://colab.research.google.com/).
+- Conexión a internet.
+- Acceso a un entorno de desarrollo ([Google Colab](https://colab.research.google.com/) y/o [Jupyter Notebooks](https://jupyter.org/).).
+- 

@@ -119,9 +119,12 @@
 
 ---
 
-### **Materiales para la Sesión 2**
-- Acceso a Node-RED (instalación local o en la nube).
-- Acceso a Google Colab y Jupyter Notebooks.
-- Guías y tutoriales en PDF para Node-RED y APIs.
-- Ejemplos de flujos y scripts para ejercicios prácticos.
-- Datasets en formato JSON y CSV generados en la sesión.
+### **Recursos y Herramientas**
+- Presentación M2 iBBi [PDF](https://drive.google.com/file/d/1Ki3tllV-zYjNaTefe0mlgwlHHEoiSv8X/view?usp=sharing)
+- Repositorio de materiales en [Github](https://github.com/jorgballesteros):  
+  - Ejemplos de flujos y scripts para ejercicios prácticos.
+  - Datasets en formato JSON y CSV generados en la sesión.
+  - Ejercicios prácticos en notebooks.
+  - Tutoriales y ayuda.
+- Acceso a [Node-RED](https://nodered.org/docs/) (instalación local o en la nube).
+- Acceso a [Google Colab](https://colab.research.google.com/) y [Jupyter Notebooks](https://jupyter.org/).
