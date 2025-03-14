@@ -3,6 +3,7 @@
 
 **Duración:** 3 horas  
 **Objetivo:** Configurar el entorno de trabajo y realizar los primeros ejercicios básicos en [Python](https://www.python.org/) para preparar el trabajo con ciencia de datos.
+**Objetivo:** Configurar el entorno de trabajo y realizar los primeros ejercicios básicos en [Python](https://www.python.org/) para preparar el trabajo con ciencia de datos.
 
 ---
 
