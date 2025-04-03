@@ -23,7 +23,7 @@ El contenido está dividido en dos partes:
 ## 🛠️ Requisitos del Sistema
 Asegúrate de tener instalados los siguientes programas:
 
-- Python 3.10+
+- Python <= 3.10
 - Jupyter Notebooks
 - Visual Studio Code
 - Librerías necesarias (ver `requirements.txt`)

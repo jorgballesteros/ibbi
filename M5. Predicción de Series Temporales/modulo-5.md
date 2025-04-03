@@ -46,26 +46,26 @@ Puedes entregar un notebook `.ipynb` o un documento `.pdf` generado desde Colab.
 
 ---
 
-## Sesión 2 – Predicción avanzada con redes neuronales, Kats y AutoML
+## Sesión 2 – Predicción avanzada con redes neuronales, GluonTS y AutoML
 
 **Duración:** 3 horas  
-**Objetivo:** Explorar técnicas modernas de predicción temporal con redes neuronales y librerías como Kats, y facilitar el uso de AutoML para docentes que deseen aplicar modelos sin programación avanzada.
+**Objetivo:** Explorar técnicas modernas de predicción temporal con redes neuronales y librerías como GluonTS, y facilitar el uso de AutoML para docentes que deseen aplicar modelos sin programación avanzada.
 
 ### Parte teórica (45 min)
 
 - Introducción a RNN/LSTM.
-- Librería Kats.
-- ¿Qué es AutoML? Uso de H2O y Google AutoML Tables.
+- Librería GluonTS.
+- ¿Qué es AutoML? Uso de H2O AutoML.
 
 ### Parte práctica (2h 15 min)
 
 **Actividad 1:** LSTM en Keras.  
-**Actividad 2:** Predicción rápida con Kats.  
-**Actividad 3:** AutoML con H2O y Google AutoML Tables.
+**Actividad 2:** Predicción rápida con GluonTS.  
+**Actividad 3:** AutoML con H2O AutoML.
 
 ### Tarea 2 - Modelos predicitivos avanzados y AutoML
 **Duración estimada:** 1,5 horas  
-**Título:** Comparación práctica entre Kats y H2O.ai AutoML para la predicción de consumo de agua
+**Título:** Comparación práctica entre GluonTS y H2O.ai AutoML para la predicción de consumo de agua
 
 **Objetivo:** Consolidar el uso de librerías modernas y herramientas AutoML para la predicción de series temporales, evaluando su rendimiento y facilidad de uso.
 
@@ -73,7 +73,7 @@ Puedes entregar un notebook `.ipynb` o un documento `.pdf` generado desde Colab.
 
 1. Usa el dataset `consumo_agua.csv` de la carpeta `data/`.  
 2. Realiza una predicción de al menos 15 días futuros con:
-   - **Kats**: empleando `ProphetModel` o `ThetaModel`, según tu preferencia.
+   - **GluonTS**: empleando `ProphetModel` o `ThetaModel`, según tu preferencia.
    - **H2O.ai AutoML**: desde Google Colab, usando un `H2OFrame` e indicando la columna temporal correctamente.
 3. Compara los resultados:
    - Visualización de ambas predicciones.
@@ -96,11 +96,10 @@ Formato de entrega: notebook `.ipynb` o `.pdf`.
 - Series temporales y modelos predicitivo:
   - **Statsmodels** (modelos estadísticos, ARIMA): https://www.statsmodels.org/stable/index.html
   - **Prophet** (modelado de series temporales): https://facebook.github.io/prophet/docs/quick_start.html
-  - **Kats (Meta)** – Kit de análisis de series temporales: https://facebookresearch.github.io/Kats/
+  - **GluonTS (Meta)** – Kit de análisis de series temporales: https://facebookresearch.github.io/GluonTS/
 - Redes neuronales y aprendizaje profundo:
   - **TensorFlow** (librería de ML de Google): https://www.tensorflow.org/api_docs
   - **Keras** (API de alto nivel para redes neuronales): https://keras.io/guides/
 - Plataformas de AutoML
   - **H2O.ai AutoML**: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html
-  - **Google Cloud AutoML Tables**: https://cloud.google.com/automl-tables/docs/overview
 
