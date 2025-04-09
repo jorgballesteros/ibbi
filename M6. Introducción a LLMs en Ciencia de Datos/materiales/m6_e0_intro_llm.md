@@ -1,5 +1,5 @@
 
-# Ejercicio 1: ¿Qué son los Modelos de Lenguaje y cómo pueden ayudarnos en el análisis de datos?
+# Introducción a Modelos de Lenguaje
 
 ## ¿Qué es un Modelo de Lenguaje?
 
