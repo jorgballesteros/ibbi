@@ -165,3 +165,6 @@ config.json
 
 # Lightning Logs
 lightning_logs/
+
+# tmp/
+tmp/
