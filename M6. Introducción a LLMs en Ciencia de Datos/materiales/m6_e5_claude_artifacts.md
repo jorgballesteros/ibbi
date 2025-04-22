@@ -1,4 +1,4 @@
-# 🧪 Ejercicio 1 – Análisis de datos con Claude Artifacts
+# 🧪 Ejercicio 1 – Claude Artifacts para análisis sin código
 
 ## 🎯 Objetivo
 

@@ -63,75 +63,85 @@ El alumnado seleccionará o reutilizará un dataset sencillo (agua, energía, te
 
 ---
 
-## Sesión 2 (3h): Consultas en lenguaje natural con PandasAI, Nixtral y LangChain
+## Sesión 2 (3h): Consulta y análisis de datos con herramientas LLM
 
-### Parte teórica (30 min)
+**Duración:** 3h lectivas + 1.5h de trabajo autónomo  
+**Objetivo:** Explorar y comparar herramientas que permiten interactuar con datasets mediante lenguaje natural, sin necesidad de conocimientos avanzados de programación.
 
-- ¿Qué es una interfaz de lenguaje natural para análisis de datos?
-- Introducción a **PandasAI**, **Nixtral** y **LangChain Tabular Agents**
-- Ventajas de usar estas herramientas frente a prompts manuales.
-- Comparativa de sus enfoques, dependencias y usos recomendados.
+### 🧠 Parte teórica (30 minutos)
 
-📎 Recursos:
-- [PandasAI en GitHub](https://github.com/gventuri/pandas-ai)
-- [Nixtral](https://github.com/nixtral/nixtral)
-- [LangChain para datos tabulares](https://python.langchain.com/docs/use_cases/tabular/)
-
----
-
-### Ejercicios prácticos
-
-1. **Ejercicio 1 – Análisis de datos con PandasAI**  
-   - Cargar un DataFrame en Python y hacer preguntas en lenguaje natural.
-   - Consultas como: "¿Cuál es el día de mayor consumo?" o "¿Puedes mostrar un gráfico de consumo mensual?"
-
-2. **Ejercicio 2 – Uso de Nixtral para análisis y procesado de datos**  
-   - Consultas sobre el mismo dataset.
-   - Comparación de respuestas con PandasAI: precisión, trazabilidad, visualización.
-
-3. **Ejercicio 3 – LangChain Tabular Agent (opcional según nivel)**  
-   - Ejecutar un análisis más completo en lenguaje natural sobre datos multivariables (agua + energía + temperatura).
-   - Discusión: ¿qué herramienta funcionó mejor?
+- ¿Qué son los LLM agents aplicados a datos?
+- ¿Qué ventajas ofrecen frente a código tradicional?
+- Diferencias entre asistentes conversacionales (Claude, ChatGPT) y agentes integrados en herramientas (Copilot, LangChain).
+- Presentación de herramientas seleccionadas:
+  - Claude Artifacts
+  - Julius AI
+  - GitHub Copilot en Notebooks
+  - LangChain Tabular Agent
+- Comparativa de sus capacidades: tipo de interacción, trazabilidad, requisitos técnicos, contexto ideal.
 
 ---
 
-### Agenda de la sesión 2
+### 🧪 Ejercicios prácticos
 
-Perfecto, con esta incorporación el esquema de la **Sesión 2** quedaría actualizado con un nuevo ejercicio demostrativo enfocado en el uso de **GitHub Copilot en VSCode**. Aquí tienes la versión revisada:
+#### ✅ Ejercicio 1 – *Claude Artifacts para análisis sin código*
+- Cargar CSV y realizar preguntas sobre consumo y temperatura.
+- Generar artefactos visuales reutilizables.
+- Explorar patrones y generar informes automáticos.
+
+#### ✅ Ejercicio 2 – *Exploración de datos con Julius AI*
+- Análisis de un CSV multivariable sin código ni instalación.
+- Preguntas creativas sobre consumo, condiciones ambientales y relaciones.
+- Comparación con Claude.
+
+#### ✅ Ejercicio 3 – *Análisis asistido con GitHub Copilot en VSCode*
+- Escribir comentarios en celdas que Copilot convierte en código Python.
+- Gráficos, estadísticas y explicación automática del código.
+- Uso de `m6_consumo_agua.csv`.
+
+#### ✅ Ejercicio 4 – *Agente inteligente para análisis multivariable con LangChain Tabular Agent*
+- Crear un agente con GPT-4 y conectar un DataFrame multivariable.
+- Consultas como “días con mayor ratio agua/energía” o “detección de valores faltantes”.
+- Comparativa entre herramientas.
 
 ---
 
-### 🧩 **Desglose esquemático – Módulo 6, Sesión 2 (3h lectivas)**  
-**Tema:** Librerías para análisis de datos en lenguaje natural con LLMs
+### 🧩 Desglose esquemático – Módulo 6, Sesión 2
 
-| Tiempo estimado | Actividad | Contenido | Herramientas |
-|-----------------|-----------|-----------|--------------|
-| **0:00 - 0:30** | 🧠 **Introducción teórica** | - ¿Qué es una interfaz de lenguaje natural para análisis de datos? <br> - Comparativa: PandasAI, Nixtral, LangChain y Copilot <br> - Revisión de ventajas y limitaciones | Presentación con demos breves |
-| **0:30 - 1:05** | 🧪 **Ejercicio 1 – Primeros pasos con PandasAI** | - Cargar un DataFrame <br> - Consultas simples y visualizaciones automáticas | VSCode + PandasAI |
-| **1:05 - 1:40** | 🧪 **Ejercicio 2 – Análisis con Nixtral** | - Consultas avanzadas <br> - Comparación con PandasAI (precisión, explicaciones) | VSCode + Nixtral |
-| **1:40 - 2:10** | 🧪 **Ejercicio 3 – LangChain Tabular Agent (opcional/avanzado)** | - Crear agente con capacidad para responder consultas en lenguaje natural <br> - Análisis multivariable | LangChain + OpenAI API |
-| **2:10 - 2:40** | 🧪 **Ejercicio 4 – Demostración con GitHub Copilot en VSCode** | - Cómo funciona Copilot como asistente de código <br> - Generación de funciones de análisis y gráficos a partir de comentarios <br> - Evaluación crítica del resultado | VSCode con Copilot |
-| **2:40 - 3:00** | 💬 **Cierre y reflexión + explicación de la tarea** | - ¿Qué herramienta fue más útil y por qué? <br> - Casos de uso reales <br> - Instrucciones para la tarea autónoma | Discusión + instrucciones |
+| Tiempo        | Actividad                                       | Herramienta               |
+|---------------|--------------------------------------------------|----------------------------|
+| 0:00 – 0:30   | Introducción y repaso teórico                   | Presentación + demostración |
+| 0:30 – 1:05   | Claude Artifacts: exploración sin código        | Claude.ai                  |
+| 1:05 – 1:40   | Julius AI: visualización y resúmenes            | Julius.ai                  |
+| 1:40 – 2:15   | GitHub Copilot en Jupyter                       | VSCode + Copilot           |
+| 2:15 – 2:50   | LangChain Tabular Agent (avanzado)              | LangChain + GPT-4          |
+| 2:50 – 3:00   | Cierre y explicación de la tarea                | Debate abierto             |
 
 ---
 
-### Tarea para casa (1.5h)
+### 🏠 Tarea para casa (1.5h)
 
-> **Título:** Consulta guiada sobre datos reales
+#### **Título:** Compara dos herramientas conversacionales para análisis de datos
 
 **Descripción:**  
-- Usar PandasAI o Nixtral para analizar un nuevo dataset (proporcionado o propio).
-- Formular 3 preguntas relevantes en lenguaje natural.
-- Generar al menos una visualización automática a partir de las respuestas.
-- Comparar la experiencia con el uso directo de ChatGPT o Gemini en la primera sesión.
+El alumnado debe elegir dos de las herramientas vistas en clase (Claude, Julius AI, Copilot o LangChain) y realizar las siguientes tareas:
 
-**Entrega:** Notebook con resultados + breve autoevaluación del proceso (máx. 400 palabras)
+- Cargar un nuevo dataset (puede ser una versión reducida del que trabajamos en clase).
+- Hacer al menos **3 preguntas analíticas** en lenguaje natural.
+- **Comparar los resultados, explicaciones y facilidad de uso.**
+- Incluir al menos una visualización generada por cada herramienta.
+
+**Formato de entrega:**  
+- PDF o `.ipynb` con capturas, resultados y reflexión breve (máx. 400 palabras).
 
 ---
 
-## Resultados esperados del módulo
+### ✅ Resultados esperados
 
-- Comprensión básica del funcionamiento de los LLMs en el análisis de datos.
-- Capacidad para formular prompts efectivos.
-- Dominio inicial de herramientas como PandasAI, Nixtral y LangChain para consultar y visualizar datos.
-- Habilidad para evaluar críticamente las respuestas generadas por modelos de lenguaje.
+Al finalizar esta sesión, el profesorado será capaz de:
+
+- Comprender los distintos enfoques para consultar datos con LLMs.
+- Utilizar asistentes como Copilot o Claude para analizar datos sin conocimientos profundos de código.
+- Evaluar el potencial de herramientas como LangChain para proyectos educativos más avanzados.
+- Comparar herramientas según facilidad, transparencia y aplicabilidad.
+- Reflexionar sobre el uso de IA conversacional en el aula y proyectos docentes.

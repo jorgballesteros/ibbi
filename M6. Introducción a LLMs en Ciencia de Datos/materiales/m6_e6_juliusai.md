@@ -1,4 +1,4 @@
-# 🧪 Ejercicio 2 – Análisis de datos en lenguaje natural con Julius AI
+# 🧪 Ejercicio 2 – Exploración de datos con Julius AI
 
 ## 🎯 Objetivo
 
