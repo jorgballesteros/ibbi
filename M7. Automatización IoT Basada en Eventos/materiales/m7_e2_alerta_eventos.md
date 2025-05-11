@@ -19,7 +19,7 @@ TELEGRAM_CHAT_ID=987654321
 
 ---
 
-# 🐍 `alerta_caudal_telegram.py` — Código completo
+# 🐍 `alerta_telegram.py` — Código completo
 
 ```python
 import os
