@@ -57,7 +57,7 @@ A continuación, se presenta una estrategia utilizando Python para agrupar alert
        time.sleep(5)
    ```
 
-
+Se ha implementado un script ejecutable y automatizable en la carpeta [scripts](scripts/telegram_agg_send.py).
 
 ---
 

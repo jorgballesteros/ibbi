@@ -43,6 +43,8 @@ while True:
     time.sleep(5)
 ```
 
+Se ha implementado un script ejecutable y automatizable en la carpeta [scripts](scripts/mqtt_pub.py).
+
 ### Script del Suscriptor (simula el sistema que actúa)
 
 ```python
@@ -62,6 +64,8 @@ client.on_message = on_message
 client.connect("broker.hivemq.com", 1883, 60)
 client.loop_forever()
 ```
+
+Se ha implementado un script ejecutable y automatizable en la carpeta [scripts](scripts/mqtt_sub.py).
 
 ---
 

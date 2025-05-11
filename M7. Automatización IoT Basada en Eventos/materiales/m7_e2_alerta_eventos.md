@@ -19,7 +19,7 @@ TELEGRAM_CHAT_ID=987654321
 
 ---
 
-# 🐍 `alerta_telegram.py` — Código completo
+# 🐍 `alerta_telegram.py` — Código fuente
 
 ```python
 import os
@@ -96,6 +96,8 @@ En tu móvil (Telegram):
 ```
 
 ---
+
+Se ha implementado un script ejecutable y automatizable en la carpeta [scripts](scripts/telegram_send.py).
 
 # 🧩 Extensiones opcionales
 
