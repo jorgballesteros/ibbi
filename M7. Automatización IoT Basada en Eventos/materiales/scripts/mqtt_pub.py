@@ -2,6 +2,7 @@ import time
 import os
 import json
 import random
+import ssl
 
 from dotenv import load_dotenv
 from paho.mqtt.client import Client, MQTTv311, CallbackAPIVersion
@@ -22,7 +23,6 @@ print(mqtt_port)
 print(mqtt_user)
 print(mqtt_pass)
 print(topic)
-
 
 # Callback al conectar
 def on_connect(client, userdata, flags, rc, properties=None):
