@@ -38,7 +38,7 @@ print(topic)
 df = pd.read_csv(DIR_PATH+"/data/consumo_potencia_min_limpio.csv", parse_dates=["dt"])
 
 # Opcional: Enviar a partir de una fecha específica
-# df = df[df["dt"] >= "2025-05-05 04:50:00"]
+df = df[df["dt"] >= "2025-05-05 04:50:00"]
 
 print(df.head())
 
@@ -58,11 +58,12 @@ try:
 
     print("📡 Iniciando simulación de envío MQTT cada 10s...")
 
-    # Recorrer las filas del dataset
+    # Adquisición de datos
     for _, fila in df.iterrows():
+        # Simular envío de datos
         payload = {
             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),  # tiempo actual
-            "dt": fila["dt"], # marca de tiempo del dataset
+            "dt": str(fila["dt"]), # marca de tiempo del dataset
             "potencia": fila["potencia"],
             "potencia_norm": fila["potencia_norm"]
         }

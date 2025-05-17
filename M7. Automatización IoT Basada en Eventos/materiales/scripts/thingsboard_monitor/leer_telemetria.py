@@ -21,7 +21,7 @@ def leer_telemetria(key="p_total"):
     headers = {
         "X-Authorization": f"Bearer {token}"
     }
-    print(headers)
+    # print(headers)
     # Procesar la respuesta
     response = requests.get(url, headers=headers)
     data = response.json()
@@ -74,11 +74,12 @@ try:
 
     # Publicar datos periódicamente
     while True:
-        ts = round(time.time() * 1000)
-        payload = {'p_total': [{'ts': ts, 'value': round(random.uniform(5.0, 15.0), 2)}]}
+        # Generar datos aleatorios (opcional)
+        # ts = round(time.time() * 1000)
+        # payload = {'p_total': [{'ts': ts, 'value': round(random.uniform(5.0, 15.0), 2)}]}
         
         # Leer telemetría de ThingsBoard
-        # payload = leer_telemetria()
+        payload = leer_telemetria()
 
         client.publish(mqtt_topic, json.dumps(payload))
         print("📤 Publicado:", payload)

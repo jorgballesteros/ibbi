@@ -15,7 +15,7 @@ DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Cargar modelo y scaler
 model = joblib.load(DIR_PATH+"/models/isolationforest.pkl")
-scaler = joblib.load(DIR_PATH+"/models/scaler.pkl")
+# scaler = joblib.load(DIR_PATH+"/models/scaler.pkl")
 
 load_dotenv()
 # Cargar variables del archivo .env
@@ -25,6 +25,7 @@ mqtt_user = os.getenv("MQTT_USER")
 mqtt_pass = os.getenv("MQTT_PASS")
 
 topic = "ibbi/edificio/energia"
+
 print(mqtt_broker)
 print(mqtt_port)
 print(topic)
@@ -50,20 +51,25 @@ def on_connect(client, userdata, flags, rc, properties):
 # Función de callback cuando llega un mensaje
 def on_message(client, userdata, msg):
     try:
+        # Preprocesamiento
         payload = json.loads(msg.payload.decode())
         potencia_norm = float(payload["potencia_norm"])
+        potencia = float(payload["potencia"])
         ts = payload.get("dt", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
-        # Preprocesar y predecir
+        # Modelo IA Predicción
         X = np.array([[potencia_norm]])
         pred = model.predict(X)[0]  # -1 = anomalía
 
+        # Decisión
         if pred == -1:
             mensaje = (
                 f"🚨 ANOMALÍA DETECTADA 🚨\n"
                 f"🕒 {ts}\n"
                 f"💡 Consumo normalizado: {potencia_norm:.2f}"
+                f"💡 Consumo real: {potencia:.2f}"
             )
+            # Acción
             enviar_alerta(mensaje)
         else:
             print(f"✅ Normal | {ts} | {potencia_norm:.2f}")
