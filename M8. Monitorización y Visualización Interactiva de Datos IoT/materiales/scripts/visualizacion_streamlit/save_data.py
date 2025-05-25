@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from datetime import datetime, date
 
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
-
+DATA_DIR = os.path.join(DIR_PATH, "data")
 # --- CONFIGURACIÓN ---
 load_dotenv()
 
