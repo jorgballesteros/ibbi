@@ -1,4 +1,4 @@
-### Tarea 1: Inventario de Productos
+### 🏠 Tarea 1: Inventario de Productos
 **Objetivo**: Practicar el uso de diccionarios, bucles y la definición de funciones para manipular datos.
 
 ---

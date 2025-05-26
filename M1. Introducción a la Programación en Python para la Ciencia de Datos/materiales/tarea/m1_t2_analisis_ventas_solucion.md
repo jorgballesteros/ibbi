@@ -1,4 +1,4 @@
-### Tarea 2: Análisis de Ventas Semanales con Pandas
+### 🏠 Tarea 2: Análisis de Ventas Semanales con Pandas
 **Objetivo**: Practicar la creación y manipulación de DataFrames de Pandas, así como el uso de operaciones básicas, filtrado, agregación y análisis de datos.
 
 ---
