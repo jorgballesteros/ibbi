@@ -168,3 +168,8 @@ lightning_logs/
 
 # tmp/
 tmp/
+
+# Secrets files
+secrets.toml
+secrets.json
+# Secrets files
