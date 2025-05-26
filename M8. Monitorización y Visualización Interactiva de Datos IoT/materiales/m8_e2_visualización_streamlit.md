@@ -19,9 +19,17 @@
 
 ### Aprender más
 En este enlace podrás consultar un programa de formación streamlit. Está dividio en pequeñas sesiones par completarlo en 30 días. [30 Días de Streamlit](https://30days.streamlit.app/)
+
 ---
 
-## Explicación paso a paso
+## Descripción del ejercicio
+Consiste en el desarrollo de una interfaz web con **Streamlit** para la **visualización en tiempo real del consumo energético** de tres dispositivos o zonas, a partir de datos recibidos vía **MQTT** o, alternativamente, desde la **API REST de ThingsBoard**. 
+
+La aplicación muestra el **estado de conectividad** de cada dispositivo en función del tiempo transcurrido desde el último mensaje recibido, y visualiza la información mediante gráficos de líneas interactivos, indicadores de último valor y estadísticas (promedio, mínimo y máximo) calculadas sobre los últimos 10 valores de cada serie. 
+
+Además, incluye un sistema de alerta con notificaciones tipo *toast* cuando se detectan valores fuera de los límites definidos (±25% respecto a la media), y un diseño modular pensado para su integración en un panel de control o sistema de supervisión energética más amplio.
+
+Enlace a la carpeta: [Visualización Streamlit](scripts/visualizacion_streamlit/)
 
 ### Importación de librerías y configuración
 
@@ -154,7 +162,7 @@ for i, disp in enumerate(DISPOSITIVOS):
     cols[i].metric(label=disp.upper(), value=estado, delta=f\"{int(delta)} s\")
 ```
 
-📌 **¿Qué hace esto?**
+**¿Qué hace esto?**
 
 * Añade controles para cambiar entre adquisición MQTT o REST.
 * Muestra una métrica de estado por cada dispositivo en base al tiempo transcurrido desde el último mensaje.
@@ -192,7 +200,7 @@ for disp in DISPOSITIVOS:
 
 ```python
 time.sleep(2)
-st.experimental_rerun()
+st.rerun()
 ```
 
 **¿Qué hace esto?**
@@ -201,7 +209,7 @@ st.experimental_rerun()
 
 ---
 
-## 💡 Otras visualizaciones útiles que podrías añadir
+## Otras visualizaciones útiles que podrías añadir
 
 | Visualización                         | Tipo                          | Descripción                                             |
 | ------------------------------------- | ----------------------------- | ------------------------------------------------------- |

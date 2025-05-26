@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor = "#2E8B57"             # Verde bosque (elementos activos)
+backgroundColor = "#FFFFFF"          # Blanco puro (fondo general)
+secondaryBackgroundColor = "#F2F2F2" # Gris muy claro (cuadros y contenedores)
+textColor = "#1A1A1A"                # Casi negro (texto)
+font = "sans serif"
