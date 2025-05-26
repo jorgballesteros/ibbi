@@ -6,7 +6,7 @@ Capacitar al profesorado en la construcción de modelos predictivos aplicados a 
 
 ---
 
-## Sesión 1 – Fundamentos del modelado temporal y modelos clásicos
+## 📅 Sesión 1 – Fundamentos del modelado temporal y modelos clásicos
 
 **Duración:** 3 horas  
 **Objetivo:** Introducir los conceptos básicos de las series temporales y aplicar modelos clásicos como ARIMA y Prophet para realizar predicciones de consumo.
@@ -24,7 +24,7 @@ Capacitar al profesorado en la construcción de modelos predictivos aplicados a 
 **Actividad 2:** Predicción de series temporales con ARIMA
 **Actividad 3:** Prophet para la predicción de series temporales
 
-### Tarea 1 - Modelado predicitvo de series temporales
+### 🏠 Tarea 1 - Modelado predicitvo de series temporales
 **Duración estimada:** 1,5 horas  
 **Título:** Ajuste y comparación de modelos clásicos para series temporales
 
@@ -46,7 +46,7 @@ Puedes entregar un notebook `.ipynb` o un documento `.pdf` generado desde Colab.
 
 ---
 
-## Sesión 2 – Predicción avanzada con redes neuronales, GluonTS y AutoML
+## 📅 Sesión 2 – Predicción avanzada con redes neuronales, GluonTS y AutoML
 
 **Duración:** 3 horas  
 **Objetivo:** Explorar técnicas modernas de predicción temporal con redes neuronales y librerías como GluonTS, y facilitar el uso de AutoML para docentes que deseen aplicar modelos sin programación avanzada.
@@ -63,7 +63,7 @@ Puedes entregar un notebook `.ipynb` o un documento `.pdf` generado desde Colab.
 **Actividad 2:** Predicción rápida con GluonTS.  
 **Actividad 3:** AutoML con H2O AutoML.
 
-### Tarea 2 - Modelos predicitivos avanzados y AutoML
+### 🏠 Tarea 2 - Modelos predicitivos avanzados y AutoML
 **Duración estimada:** 1,5 horas  
 **Título:** Comparación práctica entre GluonTS y H2O.ai AutoML para la predicción de consumo de agua
 

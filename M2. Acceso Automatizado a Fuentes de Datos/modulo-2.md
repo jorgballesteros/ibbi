@@ -1,6 +1,6 @@
 # Módulo 2: Acceso Automatizado a Fuentes de Datos y APIs
 
-## **Sesión 1 (Online): Introducción al Acceso Automatizado a Datos**
+## 📅 Sesión 1 (Online): Introducción al Acceso Automatizado a Datos
 
 **Duración:** 3 horas  
 **Objetivo:** Capacitar a los participantes en el uso de interfaces de datos (APIs) para la extracción automatizada de datos, centrándose en fuentes relevantes para la sostenibilidad, como el consumo de agua, energía y datos meteorológicos.
@@ -48,7 +48,7 @@
 
 --
 
-## **Sesión 2: Adquisición Automatizada y Flujos de Datos**
+## 📅 Sesión 2: Adquisición Automatizada y Flujos de Datos
 
 **Duración:** 3 horas  
 **Objetivo:** Aprender a integrar los datos obtenidos mediante APIs en flujos de trabajo de análisis, incluyendo la automatización y el uso de Node-RED para la adquisición de datos en tiempo real.
@@ -104,7 +104,7 @@
      - Utilizar Node-RED para extraer datos de un API de su elección, integrarlos en un flujo, y realizar un análisis básico en un notebook.
    - Resolución de dudas y consultas.
 
-### **Tarea para casa**
+### Tarea para casa
 
 - Configurar un flujo en Node-RED que consulte un API cada 3 horas, almacene los datos en un archivo CSV y los visualice en un dashboard.
 - Importar el CSV a un notebook en Google Colab, analizar los datos y generar una visualización.
@@ -112,7 +112,7 @@
 
 ---
 
-### **Recursos y Herramientas**
+### Recursos y Herramientas
 
 - Presentación M2 iBBi [PDF](https://drive.google.com/file/d/1Ki3tllV-zYjNaTefe0mlgwlHHEoiSv8X/view?usp=sharing)
 - Repositorio de materiales en [Github](https://github.com/jorgballesteros):  

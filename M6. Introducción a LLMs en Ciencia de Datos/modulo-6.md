@@ -5,7 +5,7 @@
 
 ---
 
-## Sesión 1 (3h): Introducción al uso de LLMs para análisis de datos
+## 📅 Sesión 1 (3h): Introducción al uso de LLMs para análisis de datos
 
 ### Parte teórica (30 min)
 
@@ -49,7 +49,7 @@
 
 ---
 
-### Tarea para casa (1.5h)
+### 🏠 Tarea para casa (1.5h)
 
 > **Título:** Explorando tu propio dataset con un modelo de lenguaje
 
@@ -63,12 +63,12 @@ El alumnado seleccionará o reutilizará un dataset sencillo (agua, energía, te
 
 ---
 
-## Sesión 2 (3h): Consulta y análisis de datos con herramientas LLM
+## 📅 Sesión 2 (3h): Consulta y análisis de datos con herramientas LLM
 
 **Duración:** 3h lectivas + 1.5h de trabajo autónomo  
 **Objetivo:** Explorar y comparar herramientas que permiten interactuar con datasets mediante lenguaje natural, sin necesidad de conocimientos avanzados de programación.
 
-### 🧠 Parte teórica (30 minutos)
+### Parte teórica (30 minutos)
 
 - ¿Qué son los LLM agents aplicados a datos?
 - ¿Qué ventajas ofrecen frente a código tradicional?
@@ -82,31 +82,29 @@ El alumnado seleccionará o reutilizará un dataset sencillo (agua, energía, te
 
 ---
 
-### 🧪 Ejercicios prácticos
-
-#### ✅ Ejercicio 1 – *Claude Artifacts para análisis sin código*
+### Ejercicio 1 – *Claude Artifacts para análisis sin código*
 - Cargar CSV y realizar preguntas sobre consumo y temperatura.
 - Generar artefactos visuales reutilizables.
 - Explorar patrones y generar informes automáticos.
 
-#### ✅ Ejercicio 2 – *Exploración de datos con Julius AI*
+### Ejercicio 2 – *Exploración de datos con Julius AI*
 - Análisis de un CSV multivariable sin código ni instalación.
 - Preguntas creativas sobre consumo, condiciones ambientales y relaciones.
 - Comparación con Claude.
 
-#### ✅ Ejercicio 3 – *Análisis asistido con GitHub Copilot en VSCode*
+### Ejercicio 3 – *Análisis asistido con GitHub Copilot en VSCode*
 - Escribir comentarios en celdas que Copilot convierte en código Python.
 - Gráficos, estadísticas y explicación automática del código.
 - Uso de `m6_consumo_agua.csv`.
 
-#### ✅ Ejercicio 4 – *Agente inteligente para análisis multivariable con LangChain Tabular Agent*
+### Ejercicio 4 – *Agente inteligente para análisis multivariable con LangChain Tabular Agent*
 - Crear un agente con GPT-4 y conectar un DataFrame multivariable.
 - Consultas como “días con mayor ratio agua/energía” o “detección de valores faltantes”.
 - Comparativa entre herramientas.
 
 ---
 
-### 🧩 Desglose esquemático – Módulo 6, Sesión 2
+### Desglose esquemático – Módulo 6, Sesión 2
 
 | Tiempo        | Actividad                                       | Herramienta               |
 |---------------|--------------------------------------------------|----------------------------|
@@ -136,7 +134,7 @@ El alumnado debe elegir dos de las herramientas vistas en clase (Claude, Julius 
 
 ---
 
-### ✅ Resultados esperados
+### Resultados esperados
 
 Al finalizar esta sesión, el profesorado será capaz de:
 
