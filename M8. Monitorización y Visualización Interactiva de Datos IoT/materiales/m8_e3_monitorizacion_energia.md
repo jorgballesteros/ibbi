@@ -1,4 +1,4 @@
-Gracias por compartir el código. Aquí tienes una descripción detallada del **Caso Práctico – Monitorización en tiempo real de consumo energético con Streamlit y MQTT**
+**Caso Práctico – Monitorización en tiempo real de consumo energético con Streamlit y MQTT**
 
 ## Descripción general del caso práctico
 
