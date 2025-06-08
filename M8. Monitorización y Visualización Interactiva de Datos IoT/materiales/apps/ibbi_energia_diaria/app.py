@@ -74,8 +74,8 @@ device_map = {
 device_names = device_map.keys()
 # Mapeo de zonas a ids
 device_id_map = {
-    "zonaalta": "73d802b0-24cc-11f0-874c-af5d629c6095",
-    "zonamedia": "3d76ce90-24cc-11f0-93b2-b714401cbb0f",
+    "zonaalta": "3d76ce90-24cc-11f0-93b2-b714401cbb0f",
+    "zonamedia": "73d802b0-24cc-11f0-874c-af5d629c6095",
     "zonabaja": "1d6c4040-24cb-11f0-93b2-b714401cbb0f"
 }
 
@@ -276,13 +276,13 @@ else:
         if not df_vs.empty:
             # Generate user input
             prompt = f"Analiza el consumo de {key} del día {selected_date.strftime('%d/%m/%Y')} y compara con el día anterior. " \
-                    f"El consumo total_value del día anterior fue de {total_value_vs} kWh y el día seleccionado {total_value} kWh." \
+                    f"El consumo total del día anterior fue de {total_value_vs} kWh y el día seleccionado {total_value} kWh." \
                     f"El consumo promedio del día anterior fue de {avg_value_vs} kWh y el día seleccionado {avg_value} kWh." \
                     f"El consumo máximo del día anterior fue de {avg_value_vs} kWh y el día seleccionado {avg_value} kWh." \
                     f"Solo debes emitir un mensaje de concienciación al alumnado. Si la difrencia es menor de +/-5% emite un mensaje neutro, si es un incremento superior a 5% emite un mensaje negaivo y si se reduce más de 5% uno positivo"
         else:
             prompt = f"No dispones de datos del dia entorior. Solo analiza el consumo de {key} del día {selected_date.strftime('%d/%m/%Y')}. " \
-                     f"El consumo total_value del día seleccionado es {total_value} kWh. El promedio es {avg_value} kWh y el máximo es {max_value} kWh a las {hora_max.strftime('%H:%M')}." \
+                     f"El consumo total del día seleccionado es {total_value} kWh. El promedio es {avg_value} kWh y el máximo es {max_value} kWh a las {hora_max.strftime('%H:%M')}." \
                      f"Se conciso y claro."
 
         if st.button("Generar mensaje"):
@@ -305,5 +305,5 @@ else:
                 st.error(f"Error al generar el mensaje: {e}")
 
 # --- REFRESCO AUTOMÁTICO (en producción) ---
-# time.sleep(3600)
-# st.rerun()
+time.sleep(3600)
+st.rerun()
